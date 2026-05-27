@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nano (XNO) — Digital cash. Fast. Feeless. Fixed.</title>
+    <meta
+      name="description"
+      content="Nano is digital cash for the internet. ~400ms settlement, zero fees, and a fixed supply of 133,248,297 XNO — fully distributed."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="Nano">
+        <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#1B5E20" />
+              <stop offset="1" stop-color="#66BB6A" />
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="50" fill="url(#g)" />
+          <g transform="translate(20 11) scale(0.0967)" fill="#fff">
+            <path d="m 609.7955,804.611 h -62.2 L 311.5435,436.92 71.8905,804.611 H 10.2045 L 278.7985,388.05 34.1325,5.389 h 63.411 L 312.5525,341.967 532.1105,5.389 h 59.497 l -247.299,381.57 z" />
+            <path d="m 69.1975,363.695 h 483.623 v 45.456 H 69.1975 Z m 0,136.368 h 483.643 V 545.52 H 69.1775 Z" />
+          </g>
+        </svg>
+        <span>Nano</span>
+      </a>
+      <nav>
+        <a href="#why">Why Nano</a>
+        <a href="#lattice">Block-lattice</a>
+        <a href="#energy">Energy</a>
+        <a href="#orv">Decentralization</a>
+        <a class="cta" href="#get">Get Nano</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="eyebrow">XNO · the internet's native cash</div>
+          <h1>
+            Money that moves<br />
+            <span class="grad">like a message.</span>
+          </h1>
+          <p class="lede">
+            Nano is digital cash. Send any amount, anywhere, in under half a
+            second. No fees. No middlemen. No new coins, ever.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#get">Get a wallet</a>
+            <a class="btn ghost" href="#why">See how it works</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-num">
+                <span id="ms">400</span><span class="unit">ms</span>
+              </div>
+              <div class="stat-label">Median Time to Finality</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">$0<span class="unit">.00</span></div>
+              <div class="stat-label">Network Fee, Every Transaction</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num tight"><span class="nowrap">133,248,297<span class="unit">&nbsp;XNO</span></span></div>
+              <div class="stat-label">Fixed Supply · Fully Distributed</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
+
+      <section id="why" class="section like-cash">
+        <div class="container two-col">
+          <div>
+            <div class="kicker">Like cash</div>
+            <h2>When you send Nano, 100% arrives.</h2>
+            <p>
+              No miners taking a cut. No gas auctions. No settlement window. The
+              moment your wallet shows confirmed, the recipient owns the funds
+              outright — globally, irreversibly, and without permission.
+            </p>
+            <ul class="checks">
+              <li>Sub-second finality, day or night</li>
+              <li>Zero network fees — send $0.01 or $10,000 the same way</li>
+              <li>Final the instant it confirms — no chargebacks</li>
+              <li>Peer to Peer</li>
+            </ul>
+          </div>
+          <aside class="card phone">
+            <div class="phone-screen">
+              <div class="row">
+                <div class="dot ok"></div>
+                <div>
+                  <div class="t1">Sent 12.50 XNO</div>
+                  <div class="t2">Confirmed in 0.39s · Fee $0.00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="dot ok"></div>
+                <div>
+                  <div class="t1">Sent 0.001 XNO</div>
+                  <div class="t2">Confirmed in 0.42s · Fee $0.00</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="dot ok"></div>
+                <div>
+                  <div class="t1">Sent 1,204.00 XNO</div>
+                  <div class="t2">Confirmed in 0.38s · Fee $0.00</div>
+                </div>
+              </div>
+              <div class="row pending">
+                <div class="dot pulse"></div>
+                <div>
+                  <div class="t1">Sending 25.00 XNO…</div>
+                  <div class="t2">Broadcasting to representatives</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="lattice" class="section lattice">
+        <div class="container">
+          <div class="kicker">Built different</div>
+          <h2>A block-lattice, not a blockchain.</h2>
+          <p class="sub">
+            Every Nano account has its own chain. Transactions happen in
+            parallel across accounts instead of one global queue — so the
+            network scales horizontally without block-size wars, mempools, or
+            congestion fees.
+          </p>
+
+          <figure class="lattice-figure">
+            <svg viewBox="0 0 900 360" role="img" aria-label="Block-lattice diagram">
+              <defs>
+                <linearGradient id="blk" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#66BB6A" />
+                  <stop offset="1" stop-color="#1B5E20" />
+                </linearGradient>
+                <linearGradient id="blkR" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#A5D6A7" />
+                  <stop offset="1" stop-color="#2E7D32" />
+                </linearGradient>
+                <marker
+                  id="arrow"
+                  viewBox="0 0 10 10"
+                  refX="9"
+                  refY="5"
+                  markerWidth="6"
+                  markerHeight="6"
+                  orient="auto-start-reverse"
+                >
+                  <path d="M0 0 L10 5 L0 10 z" fill="rgba(255,255,255,0.55)" />
+                </marker>
+              </defs>
+
+              <!-- Account A chain -->
+              <text x="20" y="70" class="lbl">Account A</text>
+              <g class="chain">
+                <rect x="80" y="50" width="60" height="40" rx="8" fill="url(#blk)" />
+                <text x="110" y="75" class="bx">O</text>
+                <rect x="180" y="50" width="60" height="40" rx="8" fill="url(#blk)" />
+                <text x="210" y="75" class="bx">S</text>
+                <rect x="280" y="50" width="60" height="40" rx="8" fill="url(#blk)" />
+                <text x="310" y="75" class="bx">R</text>
+                <rect x="380" y="50" width="60" height="40" rx="8" fill="url(#blk)" />
+                <text x="410" y="75" class="bx">S</text>
+                <line x1="140" y1="70" x2="180" y2="70" class="link" marker-end="url(#arrow)" />
+                <line x1="240" y1="70" x2="280" y2="70" class="link" marker-end="url(#arrow)" />
+                <line x1="340" y1="70" x2="380" y2="70" class="link" marker-end="url(#arrow)" />
+              </g>
+
+              <!-- Account B chain -->
+              <text x="20" y="190" class="lbl">Account B</text>
+              <g class="chain">
+                <rect x="80" y="170" width="60" height="40" rx="8" fill="url(#blkR)" />
+                <text x="110" y="195" class="bx">O</text>
+                <rect x="280" y="170" width="60" height="40" rx="8" fill="url(#blkR)" />
+                <text x="310" y="195" class="bx">R</text>
+                <rect x="480" y="170" width="60" height="40" rx="8" fill="url(#blkR)" />
+                <text x="510" y="195" class="bx">S</text>
+                <rect x="680" y="170" width="60" height="40" rx="8" fill="url(#blkR)" />
+                <text x="710" y="195" class="bx">R</text>
+                <line x1="140" y1="190" x2="280" y2="190" class="link" marker-end="url(#arrow)" />
+                <line x1="340" y1="190" x2="480" y2="190" class="link" marker-end="url(#arrow)" />
+                <line x1="540" y1="190" x2="680" y2="190" class="link" marker-end="url(#arrow)" />
+              </g>
+
+              <!-- Account C chain -->
+              <text x="20" y="310" class="lbl">Account C</text>
+              <g class="chain">
+                <rect x="380" y="290" width="60" height="40" rx="8" fill="url(#blk)" />
+                <text x="410" y="315" class="bx">O</text>
+                <rect x="480" y="290" width="60" height="40" rx="8" fill="url(#blk)" />
+                <text x="510" y="315" class="bx">R</text>
+                <rect x="580" y="290" width="60" height="40" rx="8" fill="url(#blk)" />
+                <text x="610" y="315" class="bx">S</text>
+                <line x1="440" y1="310" x2="480" y2="310" class="link" marker-end="url(#arrow)" />
+                <line x1="540" y1="310" x2="580" y2="310" class="link" marker-end="url(#arrow)" />
+              </g>
+
+              <!-- Cross-links: send -> receive -->
+              <path d="M210 90 C 210 130, 310 130, 310 170" class="cross" />
+              <path d="M410 90 C 410 200, 510 220, 510 290" class="cross" />
+              <path d="M510 210 C 510 250, 410 250, 410 290" class="cross" style="display:none" />
+              <path d="M610 330 C 610 360, 710 360, 710 210" class="cross" />
+            </svg>
+            <figcaption>
+              Each account owns its own chain. Send (S) and Receive (R) blocks
+              link chains together — forming the lattice. Chains update
+              <em>asynchronously</em>, so the network never has to agree on one
+              global next block.
+            </figcaption>
+          </figure>
+
+          <div class="grid-3">
+            <div class="mini">
+              <h3>Parallel by design</h3>
+              <p>
+                Independent account chains let the network process thousands of
+                transactions concurrently instead of serially.
+              </p>
+            </div>
+            <div class="mini">
+              <h3>No block size, no block time</h3>
+              <p>
+                Capacity grows with bandwidth. There is no arbitrary cap to
+                auction off, so there are no fees to bid.
+              </p>
+            </div>
+            <div class="mini">
+              <h3>Most energy-efficient currency</h3>
+              <p>
+                No mining, no staking races. A Nano transaction costs about
+                <b>0.111&nbsp;Wh</b> — orders of magnitude less than Visa,
+                Solana, ACH, and Bitcoin. See the chart below.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="energy" class="section energy">
+        <div class="container">
+          <div class="kicker">Energy</div>
+          <h2>The most energy-efficient currency in the world.</h2>
+          <p class="sub">
+            Because there's no mining and no race to produce blocks, the entire
+            network only spends what it takes to relay a tiny vote. Per
+            transaction, Nano uses less energy than your light switch does in
+            the moment you flip it.
+          </p>
+
+          <div class="energy-chart" role="table" aria-label="Energy per transaction comparison (watt-hours, log scale)">
+            <div class="row-h" role="row" aria-hidden="true">
+              <span>Network</span>
+              <span class="bar-h">Energy per transaction (log scale)</span>
+              <span class="val-h">Wh / tx</span>
+            </div>
+
+            <div class="erow nano" role="row">
+              <span class="lbl">Nano</span>
+              <div class="bar"><span style="width: 4.8%"></span></div>
+              <span class="val"><b>0.111</b> Wh<i>1×</i></span>
+            </div>
+
+            <div class="erow" role="row">
+              <span class="lbl">ACH (US banking)</span>
+              <div class="bar"><span style="width: 12.6%"></span></div>
+              <span class="val"><b>0.4</b> Wh<i>~3.6×</i></span>
+            </div>
+
+            <div class="erow" role="row">
+              <span class="lbl">Solana</span>
+              <div class="bar"><span style="width: 14.0%"></span></div>
+              <span class="val"><b>0.51</b> Wh<i>~4.6×</i></span>
+            </div>
+
+            <div class="erow" role="row">
+              <span class="lbl">Visa</span>
+              <div class="bar"><span style="width: 20.7%"></span></div>
+              <span class="val"><b>1.5</b> Wh<i>~13.5×</i></span>
+            </div>
+
+            <div class="erow btc" role="row">
+              <span class="lbl">Bitcoin</span>
+              <div class="bar"><span style="width: 100%"></span></div>
+              <span class="val"><b>~700,000</b> Wh<i>~6.3M×</i></span>
+            </div>
+          </div>
+
+          <p class="fineprint">
+            Log scale. Per-transaction estimates compiled from the Nano
+            Foundation's energy docs, the
+            <a href="https://www.carbon-ratings.com/dl/pos-report-2022" target="_blank" rel="noopener"
+              >CCRI 2022 PoS report</a
+            >, Digiconomist's
+            <a href="https://digiconomist.net/bitcoin-energy-consumption" target="_blank" rel="noopener"
+              >Bitcoin Energy Index</a
+            >, and published Visa &amp; ACH operating figures. A single Bitcoin
+            transaction uses more electricity than the average US household does
+            in two months.
+          </p>
+        </div>
+      </section>
+
+      <section id="orv" class="section orv">
+        <div class="container">
+          <div class="kicker">Open Representative Voting</div>
+          <h2>Decentralized by every holder, every day.</h2>
+          <p class="sub">
+            There are no miners and no stakers earning yield. Instead, every
+            account delegates its voting weight to a Representative of its
+            choice — and can switch in one transaction, for free. Consensus
+            requires 67% of online weight. The numbers below are live,
+            queried directly from the Nano network via
+            <a href="https://rpc.nano.to" target="_blank" rel="noopener"
+              >rpc.nano.to</a
+            >.
+          </p>
+
+          <div class="orv-grid">
+            <div class="orv-live card" id="orv-live" aria-live="polite">
+              <header class="orv-live-head">
+                <div class="metric">
+                  <div class="metric-num" id="nc-num">—</div>
+                  <div class="metric-label">
+                    Nakamoto coefficient
+                    <span class="hint">reps needed to reach the 67% quorum</span>
+                  </div>
+                </div>
+                <div class="metric small">
+                  <div class="metric-num" id="ow-num">—</div>
+                  <div class="metric-label">Online voting weight (XNO)</div>
+                </div>
+                <div class="metric small">
+                  <div class="metric-num" id="rp-num">—</div>
+                  <div class="metric-label">Principal representatives</div>
+                </div>
+              </header>
+
+              <div class="orv-live-body">
+                <div class="reps-col">
+                  <div class="reps-head" aria-hidden="true">
+                    <span>#</span>
+                    <span>Representative</span>
+                    <span>Share</span>
+                    <span class="r">%</span>
+                  </div>
+                  <ol class="reps" id="reps-list">
+                    <li class="rep skeleton"><span>1</span><span>Loading live data…</span><span><i></i></span><span class="r">—</span></li>
+                    <li class="rep skeleton"><span>2</span><span>&nbsp;</span><span><i></i></span><span class="r">—</span></li>
+                    <li class="rep skeleton"><span>3</span><span>&nbsp;</span><span><i></i></span><span class="r">—</span></li>
+                    <li class="rep skeleton"><span>4</span><span>&nbsp;</span><span><i></i></span><span class="r">—</span></li>
+                    <li class="rep skeleton"><span>5</span><span>&nbsp;</span><span><i></i></span><span class="r">—</span></li>
+                  </ol>
+                </div>
+
+                <div class="orv-pie">
+                  <div class="pie-wrap">
+                    <svg viewBox="0 0 220 220" class="pie" id="pie-svg" aria-hidden="true">
+                      <g transform="translate(110 110) rotate(-90)">
+                        <circle r="86" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="28" />
+                        <g id="pie-slices"></g>
+                      </g>
+                    </svg>
+                    <div class="pie-center">
+                      <div class="pc-num" id="pc-nc">—</div>
+                      <div class="pc-cap">to halt at&nbsp;67%</div>
+                    </div>
+                  </div>
+                  <ul class="legend" id="pie-legend"></ul>
+                </div>
+              </div>
+
+              <footer class="orv-live-foot">
+                <span id="orv-status">Connecting to public Nano RPC…</span>
+                <a href="https://nanoticker.org/weight" target="_blank" rel="noopener">Full chart on nanoticker.org ↗</a>
+              </footer>
+            </div>
+            <div class="orv-points">
+              <div class="point">
+                <div class="num">1</div>
+                <div>
+                  <h3>You choose your representative</h3>
+                  <p>
+                    Pick any node operator. Your XNO stays in your wallet — only
+                    your <em>voting weight</em> follows your choice.
+                  </p>
+                </div>
+              </div>
+              <div class="point">
+                <div class="num">2</div>
+                <div>
+                  <h3>Reps vote on every transaction</h3>
+                  <p>
+                    Conflicts resolve when 67% of online voting weight agrees.
+                    Confirmation is final the moment quorum is reached.
+                  </p>
+                </div>
+              </div>
+              <div class="point">
+                <div class="num">3</div>
+                <div>
+                  <h3>If a rep misbehaves, you re-delegate</h3>
+                  <p>
+                    A single free transaction moves your weight elsewhere. The
+                    network self-heals without forks or hard upgrades.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="supply" class="section supply">
+        <div class="container supply-inner">
+          <div>
+            <div class="kicker">Fixed. Distributed. Done.</div>
+            <h2>133,248,297 XNO. That's all there will ever be.</h2>
+            <p>
+              Nano was distributed for free between 2015 and 2017 via a
+              captcha-secured faucet. No ICO, no pre-mine sold to insiders, no
+              ongoing emission. The supply is set in stone — and was set in
+              human hands, not a mining cartel's.
+            </p>
+            <a class="btn ghost" href="https://content.nano.org/whitepaper/Nano_Whitepaper_en.pdf" target="_blank" rel="noopener"
+              >Read the whitepaper →</a
+            >
+          </div>
+          <div class="supply-meter card" aria-hidden="true">
+            <div class="ring">
+              <svg viewBox="0 0 120 120">
+                <circle cx="60" cy="60" r="52" class="ring-bg" />
+                <circle cx="60" cy="60" r="52" class="ring-fg" />
+              </svg>
+              <div class="ring-label">
+                <strong>100%</strong>
+                <span>distributed</span>
+              </div>
+            </div>
+            <div class="meter-rows">
+              <div><span>Max supply</span><b>133,248,297</b></div>
+              <div><span>Circulating</span><b>133,248,297</b></div>
+              <div><span>Inflation rate</span><b>0.00%</b></div>
+              <div><span>New issuance</span><b>None, ever</b></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="get" class="section get">
+        <div class="container">
+          <h2>Try it. It feels like the future.</h2>
+          <p class="sub">
+            Spin up a wallet, get a few raw from a faucet, and send it across
+            the world before this paragraph finishes loading.
+          </p>
+          <div class="get-grid">
+            <a class="wallet-card" href="https://natrium.io" target="_blank" rel="noopener">
+              <h3>Natrium</h3>
+              <p>Mobile — iOS &amp; Android</p>
+            </a>
+            <a class="wallet-card" href="https://nault.cc" target="_blank" rel="noopener">
+              <h3>Nault</h3>
+              <p>Web &amp; desktop, hardware-wallet ready</p>
+            </a>
+            <a class="wallet-card" href="https://cake.gd/nano" target="_blank" rel="noopener">
+              <h3>Cake Wallet</h3>
+              <p>Multi-coin mobile wallet with XNO</p>
+            </a>
+            <a class="wallet-card" href="https://docs.nano.org" target="_blank" rel="noopener">
+              <h3>Run a node</h3>
+              <p>Become a Representative — strengthen the network</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div class="container foot-inner">
+        <div>
+          <div class="brand small">
+            <svg class="brand-mark" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="50" fill="url(#g)" />
+              <g transform="translate(20 11) scale(0.0967)" fill="#fff">
+                <path d="m 609.7955,804.611 h -62.2 L 311.5435,436.92 71.8905,804.611 H 10.2045 L 278.7985,388.05 34.1325,5.389 h 63.411 L 312.5525,341.967 532.1105,5.389 h 59.497 l -247.299,381.57 z" />
+                <path d="m 69.1975,363.695 h 483.623 v 45.456 H 69.1975 Z m 0,136.368 h 483.643 V 545.52 H 69.1775 Z" />
+              </g>
+            </svg>
+            <span>Nano</span>
+          </div>
+          <p class="tag">Digital cash for the internet.</p>
+        </div>
+        <div class="cols">
+          <div>
+            <h4>Protocol</h4>
+            <a href="https://docs.nano.org" target="_blank" rel="noopener">Docs</a>
+            <a href="https://content.nano.org/whitepaper/Nano_Whitepaper_en.pdf" target="_blank" rel="noopener">Whitepaper</a>
+            <a href="https://github.com/nanocurrency" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div>
+            <h4>Network</h4>
+            <a href="https://nanoticker.org/weight" target="_blank" rel="noopener">Decentralization</a>
+            <a href="https://nanolooker.com" target="_blank" rel="noopener">Explorer</a>
+            <a href="https://nanocharts.info" target="_blank" rel="noopener">Stats</a>
+          </div>
+          <div>
+            <h4>Community</h4>
+            <a href="https://discord.gg/RNAE2R9" target="_blank" rel="noopener">Discord</a>
+            <a href="https://reddit.com/r/nanocurrency" target="_blank" rel="noopener">Reddit</a>
+            <a href="https://x.com/nano" target="_blank" rel="noopener">X / Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="container foot-bottom">
+        <span>© Nano community.</span>
+        <span>Unofficial fan-made redesign · not affiliated with the Nano Foundation.</span>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
